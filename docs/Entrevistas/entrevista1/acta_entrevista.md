@@ -52,7 +52,6 @@ Se explicó que la maqueta **no incluye** aún funciones del sistema completo, c
 | # | Acuerdo | Responsable | Fecha |
 |---|---|---|---|
 | 1 | Continuar con el desarrollo del sistema a partir de lo mostrado en el prototipo | Equipo de desarrollo | [por definir] |
-| 2 | Entregar el repositorio con la documentación, el informe en PDF y el prototipo ejecutable | Julián Fernández | [por definir] |
 
 ## 6. Cierre
 Se dio por concluida la reunión una vez presentado el prototipo a la propietaria.
