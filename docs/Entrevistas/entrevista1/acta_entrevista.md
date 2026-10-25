@@ -8,7 +8,7 @@
 | **Tipo de reunión** | Primera entrevista con el cliente |
 | **Fecha** | 25 de octubre de 2026 |
 | **Hora de inicio** | 10:00 a. m. |
-| **Hora de cierre** | [por completar] |
+| **Hora de cierre** | 10:38 a. m. |
 | **Lugar** | Hotel Terraza – Recepción |
 | **Modalidad** | Presencial |
 | **Resultado** | Reunión exitosa – objetivos cumplidos |
