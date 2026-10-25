@@ -54,5 +54,5 @@ Detalle en [riesgos_identificados.md](riesgos_identificados.md).
 - El sistema se ejecuta en **un único equipo local** de recepción.
 - El **Recepcionista** es el único usuario operativo.
 - No se requiere conexión permanente a Internet para la operación básica.
-- Los supuestos fueron **presentados y validados** en la [Entrevista 1](../Entrevistas/entrevista1/acta_entrevista.md) (25/10/2026) con la propietaria, usando el [prototipo](../Prototipo/README.md) (maqueta de 4 requerimientos).
+- En la [Entrevista 1](../Entrevistas/entrevista1/acta_entrevista.md) (25/10/2026) se presentó a la propietaria el [prototipo](../Prototipo/README.md) (maqueta de 4 requerimientos). Los demás supuestos quedan por validar en entrevistas posteriores.
 

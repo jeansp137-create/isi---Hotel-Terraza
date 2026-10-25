@@ -4,7 +4,7 @@
 **Entrevistada**: Amparo Morales (propietaria del hotel)
 **Entrevistador**: Julián David Fernández Ruiz
 **Fecha**: 25 de octubre de 2026, 10:00 a. m.
-**Objetivo**: validar el modelo de negocio y el **prototipo (maqueta de 4 requerimientos: Usuarios, Check-in, Check-out y Alimentos)** y definir el requerimiento funcional prioritario.
+**Objetivo**: presentar a la propietaria el **prototipo (maqueta de 4 requerimientos: Usuarios, Check-in, Check-out y Alimentos)** para que vea, más o menos, cómo va a quedar el software.
 
 ## 1. Negocio
 
@@ -49,3 +49,4 @@
 5. ¿Aceptaría un periodo de uso paralelo (sistema + libro físico)?
 6. ¿Qué haría el hotel ante un corte de energía o falla del computador?
 7. ¿Qué haría que usted considere exitosa la primera entrega?
+

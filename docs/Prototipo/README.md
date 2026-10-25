@@ -31,3 +31,4 @@ Reservas y abonos, panel de las 40 habitaciones con sus estados, cálculo de tar
 
 ## Cómo ejecutarla
 Ver las instrucciones paso a paso en el [README principal](../../README.md#4-compilar-y-ejecutar-el-prototipo).
+

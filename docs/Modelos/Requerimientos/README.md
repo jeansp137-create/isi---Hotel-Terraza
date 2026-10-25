@@ -43,3 +43,4 @@ Resumen del modelo de requerimientos. El detalle completo (flujos paso a paso y 
 | RNF-04 | Normativa fiscal: no emite facturación electrónica (la maneja un software fiscal independiente) |
 
 > **Nota sobre el prototipo:** la maqueta se ve en el navegador (servidor local en Java) únicamente para mostrar la idea; el sistema final seguirá lo definido en RNF-01.
+

@@ -102,3 +102,4 @@ Cada módulo tiene su **historial con búsqueda**. Los datos se guardan en archi
 | Informe del prototipo (PDF) | [docs/Prototipo/informe_prototipo.pdf](docs/Prototipo/informe_prototipo.pdf) |
 | Lista de preguntas – Entrevista 1 | [docs/Entrevistas/entrevista1/lista_preguntas.md](docs/Entrevistas/entrevista1/lista_preguntas.md) |
 | Acta – Entrevista 1 | [docs/Entrevistas/entrevista1/acta_entrevista.md](docs/Entrevistas/entrevista1/acta_entrevista.md) |
+

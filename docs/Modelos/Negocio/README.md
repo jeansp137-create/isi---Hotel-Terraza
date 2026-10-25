@@ -52,3 +52,4 @@ Resumen del modelo de negocio. El documento completo, con diagramas de casos de 
 | Niños ≤ 3 años | \$0 | \$0 |
 
 El catálogo completo de bar, aseo y lavandería está en el PDF.
+
