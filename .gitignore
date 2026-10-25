@@ -1,0 +1,6 @@
+.vs/
+*.rar
+*.pdf
+bin/
+obj/
+backups/
