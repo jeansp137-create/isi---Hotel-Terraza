@@ -1,7 +1,7 @@
 # Hipótesis del Problema – Hotel Terraza
 
 ## 1. Contexto
-El Hotel Terraza cuenta con **40 habitaciones**. Su operación diaria (reservas, check-in, check-out, control de ocupación y facturación básica) se lleva en **libros físicos y registros en papel** manejados por recepción.
+El Hotel Terraza cuenta con **40 habitaciones** distribuidas en los pisos 2 al 5 (por ejemplo 201–205 y 201A–205A), cada una en estado **Libre**, **Ocupada** o **En mantenimiento**. Su operación diaria (reservas, check-in, check-out, control de ocupación, consumos de tienda/minibar y liquidación) se lleva en **libros físicos y registros en papel** manejados por recepción. El detalle está en el [modelo de negocio](../Modelos/Negocio/README.md).
 
 ## 2. Problema principal
 > **La gestión manual con libros físicos y registros en papel es ineficiente, propensa a errores y no permite conocer en tiempo real la disponibilidad de habitaciones.**
@@ -31,8 +31,9 @@ Manifestaciones presumidas del problema:
 | N3 | Ver disponibilidad y estado de las 40 habitaciones en tiempo real | Alta |
 | N4 | Registrar check-out y liberar la habitación | Media |
 | N5 | Registrar datos de clientes y su historial | Media |
-| N6 | Registrar reservas provenientes de Booking | Media |
+| N6 | Registrar reservas provenientes de Booking (con su tarifa diferenciada) | Media |
 | N7 | Registrar solicitudes de taxi y pedidos a proveedores | Baja |
+| N10 | Registrar consumos de tienda/minibar y calcular tarifas, recargos y devoluciones | Media |
 | N8 | Generar reportes básicos de ocupación | Media |
 | N9 | Respaldar y recuperar la información | Alta |
 
@@ -53,5 +54,5 @@ Detalle en [riesgos_identificados.md](riesgos_identificados.md).
 - El sistema se ejecuta en **un único equipo local** de recepción.
 - El **Recepcionista** es el único usuario operativo.
 - No se requiere conexión permanente a Internet para la operación básica.
-- Los supuestos serán **validados** en la entrevista con el cliente.
+- Los supuestos fueron **presentados y validados** en la [Entrevista 1](../Entrevistas/entrevista1/acta_entrevista.md) (25/10/2026) con la propietaria, usando el [prototipo](../Prototipo/README.md) (maqueta de 4 requerimientos).
 

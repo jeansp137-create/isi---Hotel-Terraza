@@ -1,6 +1,9 @@
 .vs/
-*.rar
-*.pdf
+software2/
+software2.rar
+01. GuiaPrimeraEntrevista.pdf
+informe_de_sw.pdf
 bin/
 obj/
 backups/
+docs/Prototipo/data/

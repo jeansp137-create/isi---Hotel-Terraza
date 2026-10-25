@@ -29,6 +29,7 @@ Clasificación según **Stephen R. Schach** (*Ingeniería de Software Clásica y
 
 ### Booking
 - Plataforma de intermediación que genera reservas para el hotel.
+- Actor secundario externo: envía la reserva con su propia tarifa (que incluye comisión). No se exigen anticipos y, si el cliente no llega, se marca *No-Show* sin penalidad.
 - La información de sus reservas (huésped, fechas, tipo de habitación) es **ingresada manualmente** por el Recepcionista.
 - No existe integración automática en esta fase.
 
@@ -40,7 +41,7 @@ Clasificación según **Stephen R. Schach** (*Ingeniería de Software Clásica y
 
 ### Proveedores
 - Entidades que proveen insumos (lencería, limpieza, alimentos) y servicios (mantenimiento).
-- Interacción **fuera del alcance** del prototipo; se contempla como entidad externa para modelos futuros.
+- Interacción **fuera del alcance** del prototipo (ver CdU-N15 en el [modelo de negocio](../Modelos/Negocio/README.md)); se contempla como entidad externa.
 
 ## 5. Diagrama de contexto
 

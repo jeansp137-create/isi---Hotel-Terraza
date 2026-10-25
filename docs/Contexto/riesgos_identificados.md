@@ -43,7 +43,7 @@ Cada riesgo se evalúa por **probabilidad** (Baja/Media/Alta) e **impacto** (Baj
 - **Descripción**: el personal de recepción está habituado a libros físicos y puede percibir el sistema como una carga adicional, con errores iniciales o resistencia al cambio.
 - **Probabilidad**: Alta — **Impacto**: Medio-Alto — **Nivel**: **Alto**
 - **Mitigaciones**:
-  - Interfaz simple, centrada en **Check-in / Reservas**, con pocos pasos y mensajes claros.
+  - Interfaz simple, centrada en **Check-in / Reservas**, con pocos pasos y mensajes claros (como en la maqueta mostrada a la propietaria).
   - **Capacitación** práctica inicial (2 sesiones cortas) y manual de usuario de una página.
   - **Periodo de operación paralela** (sistema + papel) durante 2 semanas.
   - Participación del Recepcionista en la **validación del prototipo**.

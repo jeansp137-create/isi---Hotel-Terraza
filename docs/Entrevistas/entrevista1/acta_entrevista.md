@@ -2,111 +2,102 @@
 
 | Campo | Detalle |
 |---|---|
-| **Proyecto** | Sistema de gestión Hotel Terraza |
+| **Proyecto** | Sistema de Gestión Hotelera – Hotel Terraza |
+| **Asignatura** | Ingeniería de Software I – Universidad de los Llanos |
 | **Fase** | Inicio |
 | **Tipo de reunión** | Primera entrevista con el cliente |
-| **Fecha** | [DD/MM/AAAA] *(completar)* |
-| **Hora** | [HH:MM – HH:MM] *(completar)* |
+| **Fecha** | 25 de octubre de 2026 |
+| **Hora de inicio** | 10:00 a. m. |
+| **Hora de cierre** | [por completar] |
 | **Lugar** | Hotel Terraza – Recepción |
 | **Modalidad** | Presencial |
 | **Resultado** | Reunión exitosa – objetivos cumplidos |
-
-> **Nota**: esta acta es una **simulación** elaborada para la documentación académica de la Fase de Inicio. Los nombres y datos deben ajustarse a los de la reunión real.
 
 ## 1. Participantes
 
 | Nombre | Rol | Organización |
 |---|---|---|
-| [Nombre] | Administrador / Representante del hotel | Hotel Terraza |
-| [Nombre] | Recepcionista (usuario operativo) | Hotel Terraza |
-| [Nombre] | Ingeniero de software – entrevistador | Equipo de desarrollo |
-| [Nombre] | Ingeniero de software – secretario/relator | Equipo de desarrollo |
+| Amparo Morales | Propietaria del hotel (cliente / stakeholder principal) | Hotel Terraza |
+| Julián David Fernández Ruiz | Estudiante de Ingeniería de Software, desarrollador del sistema y Recepcionista en turno | Equipo de desarrollo / Hotel Terraza |
+
+> Julián atendió la recepción durante su turno y aprovechó para presentar el prototipo a la propietaria.
 
 ## 2. Objetivos de la reunión
-1. Presentar el **modelo de dominio** elaborado a partir de la hipótesis del problema.
-2. **Validar el prototipo** con el cliente.
+1. Presentar el **modelo de dominio y de negocio** del hotel (actores, casos de uso y requerimientos).
+2. **Validar el prototipo** con la propietaria.
 3. Seleccionar el **requerimiento funcional prioritario**.
 4. Acordar los **compromisos de entrega**.
 
-## 3. Agenda y desarrollo
+## 3. Documentos y material usados
+- Informe de [modelo de negocio y requerimientos](../../Modelos/Negocio/modelo_negocio_y_requerimientos.pdf).
+- [Prototipo](../../Prototipo/) ejecutado con `compilar.bat` y `ejecutar.bat` (navegador en `http://localhost:8080`).
+- [Lista de preguntas](lista_preguntas.md) de la entrevista.
 
-| # | Tema | Duración |
-|---|---|---|
-| 1 | Presentación y objetivos | 10 min |
-| 2 | Presentación del modelo de dominio | 20 min |
-| 3 | Validación del prototipo | 30 min |
-| 4 | Selección del requerimiento prioritario | 15 min |
-| 5 | Acuerdos y cierre | 15 min |
+> **Aclaración:** el prototipo es una **maqueta** para que la propietaria vea más o menos cómo quedará el software. No es el sistema completo y solo implementa **4 requerimientos**.
 
-### 3.1 Presentación del modelo de dominio
-Se presentó el modelo con las entidades y relaciones principales:
+## 4. Desarrollo de la reunión
 
-- **Habitación** (40 unidades): número, tipo, tarifa, estado.
-- **Reserva**: fechas de entrada y salida, canal de origen (directo o Booking), estado.
-- **Cliente / Huésped**: datos de identificación y contacto.
-- **Estadía (Check-in/Check-out)**: ocupación efectiva de una habitación.
-- **Recepcionista**: usuario que registra las operaciones.
-- **Servicios externos**: Taxis y Proveedores.
+### 4.1 Presentación del modelo de dominio y de negocio
+Se presentó lo recopilado sobre el hotel:
 
-**Observaciones del cliente**
-- Confirmó que el modelo refleja la operación real del hotel.
-- Indicó que las reservas de Booking se ingresan **manualmente** y deben distinguirse por su canal de origen.
-- Solicitó que la habitación tenga un estado de **limpieza**, aunque no sea prioritario en la primera entrega.
+- **Habitaciones:** 40, en los pisos 2 a 5 (201–205 y 201A–205A, y así en cada piso), con estados **Libre**, **Ocupada** y **En mantenimiento**.
+- **Actores (Schach):** Recepcionista (usuario operativo exclusivo); Cliente y Booking como actores de negocio; Taxis y Proveedores como actores externos.
+- **Reglas de negocio ya levantadas:** reservas sin pago obligatorio y abonos voluntarios, No-Show sin penalidad, devolución total por cancelación previa con abono, reliquidación por salida anticipada, niños de 3 años o menos sin cobro de hospedaje, desayuno de visitantes a \$12.000, recargo de \$5.000 por persona/noche con tarjeta, y recargo de \$10.000 por hora tras la 1:00 p. m.
+- **Tarifario y catálogo** de bar, aseo y lavandería.
 
-**Resultado**: modelo de dominio **aprobado** con ajustes menores.
+**Resultado:** el modelo de negocio fue **revisado con la propietaria**, quien lo confirmó como reflejo de la operación del hotel.
 
-### 3.2 Validación del prototipo
-Se mostró el prototipo ejecutable (mediante `compilar.bat` y `ejecutar.bat`) con el flujo de consulta de disponibilidad, registro de reserva y check-in.
+### 4.2 Validación del prototipo
+Se recorrieron los **4 módulos de la maqueta**:
 
-**Comentarios del Recepcionista**
-- La pantalla con el estado de las 40 habitaciones es clara y ágil.
-- El flujo de check-in es similar al proceso actual, lo que facilita su adopción.
-- Pidió resaltar con colores los estados de las habitaciones y confirmar antes de guardar datos.
+| Módulo | Qué se mostró |
+|---|---|
+| **Usuarios** | Registro de huésped (documento, nombre, apellido, teléfono, correo) y su historial con búsqueda |
+| **Check-in** | Registro de llegada (documento, habitación, fecha, noches); solo permite documentos ya registrados |
+| **Check-out** | Registro de salida (documento, habitación, fecha, observaciones) |
+| **Alimentos** | Registro de productos/platillos (nombre, tipo, precio, descripción) |
 
-**Resultado**: prototipo **validado** por el cliente, con mejoras de usabilidad registradas.
+Se explicó que la maqueta **no incluye** aún: reservas y abonos, panel visual de las 40 habitaciones, cálculo de tarifas y recargos, reliquidación, devoluciones ni reportes.
 
-### 3.3 Selección del requerimiento funcional prioritario
-Se analizaron los requerimientos candidatos:
+**Resultado:** la propietaria **validó** el prototipo como una buena representación de la apariencia y del flujo general (menú lateral, formularios simples e historiales con búsqueda).
+
+### 4.3 Selección del requerimiento funcional prioritario
 
 | Requerimiento | Valor para el negocio | Decisión |
 |---|---|---|
-| **Check-in / Reservas** | Muy alto: evita dobles reservas y agiliza la recepción | **Seleccionado como prioritario** |
-| Check-out | Alto | Siguiente iteración |
-| Registro de clientes | Medio | Incluido dentro de Check-in/Reservas |
-| Registro de taxis y proveedores | Bajo | Posterior |
-| Reportes de ocupación | Medio | Posterior |
+| **Check-in / Reservas** (CdR-04, apoyado en CdR-01 y CdR-02) | Muy alto: controla la ocupación y reemplaza el libro físico | **Seleccionado como prioritario** |
+| Check-out y liquidación (CdR-07) | Alto | Siguiente iteración |
+| Gestión de habitaciones (CdR-03) | Alto | Siguiente iteración |
+| Consumos de tienda/minibar (CdR-05) y abonos (CdR-06) | Medio | Posterior |
+| Reportes y métricas (CdR-08) | Medio | Posterior |
 
-**Decisión**: el cliente seleccionó **Check-in / Reservas** como requerimiento funcional prioritario de la primera entrega.
+**Decisión:** el requerimiento funcional prioritario es **Check-in / Reservas**. El **Check-in** ya existe en la maqueta; las **Reservas** aún no están en el prototipo y se incorporarán en la siguiente etapa.
 
-### 3.4 Riesgos tratados
-- **Pérdida de datos**: se acordó implementar y documentar un plan de backups; la administración designará a un responsable.
-- **Curva de aprendizaje**: el cliente aceptó capacitación corta y un periodo de operación paralela con papel.
+### 4.4 Riesgos tratados
+- **Pérdida de datos:** al ser un sistema local, se hablará de un plan de respaldos ([riesgos_identificados.md](../../Contexto/riesgos_identificados.md)).
+- **Curva de aprendizaje del personal:** se ve manejable por la simplicidad de las pantallas; se plantea una capacitación corta y un periodo de uso paralelo con el libro físico.
 
-## 4. Acuerdos y compromisos
+## 5. Acuerdos y compromisos
 
-| # | Acuerdo | Responsable | Fecha límite |
+| # | Acuerdo | Responsable | Fecha |
 |---|---|---|---|
-| 1 | Entregar los modelos de negocio y de requerimientos de Check-in / Reservas | Equipo de desarrollo | [fecha] |
-| 2 | Incorporar los ajustes de usabilidad del prototipo (colores de estado, confirmación) | Equipo de desarrollo | [fecha] |
-| 3 | Entregar el prototipo actualizado con `compilar.bat` y `ejecutar.bat` e instrucciones en el README | Equipo de desarrollo | [fecha] |
-| 4 | Proporcionar la lista de tipos de habitación y tarifas | Administración del hotel | [fecha] |
-| 5 | Proporcionar un ejemplo de reserva de Booking y del registro actual en papel | Recepcionista | [fecha] |
-| 6 | Designar al responsable de backups | Administración del hotel | [fecha] |
-| 7 | Programar una segunda reunión para validar el modelo de requerimientos | Ambas partes | [fecha] |
+| 1 | Tomar **Check-in / Reservas** como requerimiento prioritario del desarrollo | Equipo de desarrollo | Inmediata |
+| 2 | Incorporar las **Reservas** (con abonos voluntarios y No-Show) al prototipo / sistema | Equipo de desarrollo | [por definir] |
+| 3 | Entregar el repositorio con documentación, informe en PDF y prototipo ejecutable | Julián Fernández | [por definir] |
+| 4 | Confirmar tarifas y catálogo vigentes del hotel | Amparo Morales | [por definir] |
+| 5 | Designar a la persona responsable de las copias de seguridad | Amparo Morales | [por definir] |
+| 6 | Programar la siguiente reunión para validar los requerimientos y el avance | Ambas partes | [por definir] |
 
-## 5. Alcance acordado para la primera entrega
-- **Incluye**: gestión de reservas, check-in, consulta de disponibilidad de las 40 habitaciones y registro de datos del huésped.
-- **No incluye**: facturación, integración automática con Booking, gestión de taxis y proveedores, reportes avanzados.
+## 6. Alcance acordado para la siguiente entrega
+- **Incluye:** reservas, check-in, registro de clientes y consulta de estado de las 40 habitaciones.
+- **No incluye (por ahora):** integración automática con Booking, facturación electrónica (la maneja un software fiscal independiente) y reportes avanzados.
 
-## 6. Cierre
-Se dio por concluida la reunión con la conformidad de ambas partes sobre el modelo de dominio, el prototipo y el requerimiento prioritario. Se acordó enviar esta acta por correo para su confirmación en un plazo de 48 horas.
+## 7. Cierre
+Se dio por concluida la reunión con la conformidad de la propietaria sobre el modelo, el prototipo y el requerimiento prioritario.
 
-## 7. Firmas
+## 8. Firmas
 
 | Nombre | Rol | Firma |
 |---|---|---|
-| [Nombre] | Representante del hotel | ______________ |
-| [Nombre] | Recepcionista | ______________ |
-| [Nombre] | Ingeniero de software | ______________ |
-| [Nombre] | Ingeniero de software | ______________ |
-
+| Amparo Morales | Propietaria del hotel | ______________ |
+| Julián David Fernández Ruiz | Estudiante / Recepcionista | ______________ |
