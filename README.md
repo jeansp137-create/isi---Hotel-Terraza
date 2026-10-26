@@ -32,12 +32,12 @@ El prototipo de [`docs/Prototipo/`](docs/Prototipo/) es **solo una maqueta** par
 
 | # | Módulo del prototipo | Qué hace |
 |---|---|---|
-| 1 | **Usuarios** | Registra huéspedes (documento, nombre, apellido, teléfono, correo) |
+| 1 | **Usuarios** | Registra clientes (documento, nombre, apellido, teléfono, correo) |
 | 2 | **Check-in** | Registra la llegada de un huésped (documento, habitación, fecha, noches) |
 | 3 | **Check-out** | Registra la salida de un huésped (documento, habitación, fecha, observaciones) |
 | 4 | **Alimentos** | Registra platillos/productos (nombre, tipo, precio, descripción) |
 
-Cada módulo tiene su **historial con búsqueda**. Los datos se guardan en archivos `.txt` dentro de una carpeta `data/` que se crea sola al ejecutar. Tecnología: **Java 17** (servidor web integrado, sin librerías externas); se usa desde el navegador.
+Cada módulo tiene su **historial con búsqueda**. Los datos se guardan en archivos `.json` dentro de una carpeta `data/` que se crea sola al ejecutar. Tecnología: **Java 17** (servidor web integrado, sin librerías externas); se usa desde el navegador.
 
 > El prototipo **no** valida disponibilidad, no calcula tarifas y no muestra el panel de las 40 habitaciones. Eso corresponde al sistema completo (ver [`docs/Modelos`](docs/Modelos/)).
 
